@@ -15,11 +15,11 @@ body {
  
 section#button-container {
   display: inline-block;
-  width: 100%;
+  width: 100%; 
 }
 
 section#button-container .container {
-  margin:auto;
+  margin:auto; 
   }
 
 section#button-container .button {
@@ -29,47 +29,46 @@ section#button-container .button {
   float: left;
   position: relative;
   font-family: sans-serif;
-  cursor: pointer;
+  cursor: pointer;  z-index: 1;
 }
 
 section#button-container .button .label {
   padding: 10px;
-  display: inline-block;
+  display: inline-block;  
 }
 
 section#button-container .button.v18:hover .icon {
   -webkit-transform: scale(0.9) skew(0deg, 0deg);
-          transform: scale(0.9) skew(0deg, 0deg);
+          transform: scale(0.9) skew(0deg, 0deg);  
 }
 
 section#button-container .button.v18:hover .icon:before, section#button-container .button.v18:hover .icon:after {
   width: 60px;
-  transition-delay: 0.4s;
+  transition-delay: 0.4s; 
   }
   
 section#button-container .button.v18:hover .icon:before {
-  left: calc(50% - 30px);
+  left: calc(50% - 30px); 
 }
 
 section#button-container .button.v18:hover .icon:after {
-  right: calc(50% - 30px);
+  right: calc(50% - 30px); 
 }
 
 section#button-container .button.v18:hover .icon span:before, section#button-container .button.v18:hover .icon span:after {
   height: 0;
-  transition-delay: 0.5s;
+  transition-delay: 0.5s; 
 }
 
-section#button-container .button.v18:hover .icon2 {
+section#button-container .button.v18:hover .icon2 {  /* START Z-INDEX */
     -webkit-transform: skew(0deg, 0deg) scaleX(0);
           transform: skew(0deg, 0deg) scaleX(1);
   background: #d60d1b;
-  z-index: -1;
-  transition-delay: 0.5s;
+  transition-delay: 0.5s; z-index: -1;
 }
 
 section#button-container .button.v18 .label {
-  padding: 15px 35px;
+  padding: 15px 35px; 
 }
 
 section#button-container .button.v18 .icon2 {
@@ -81,7 +80,7 @@ section#button-container .button.v18 .icon2 {
   height: 100%;
   -webkit-transform: skew(0deg, 0deg) scaleX(0.2);
           transform: skew(0deg, 0deg) scaleX(0.2);
-  transition: all 0.2s;
+  transition: all 0.2s; 
 }
 
 section#button-container .button.v18 .icon {
@@ -93,7 +92,7 @@ section#button-container .button.v18 .icon {
   height: 100%;
   -webkit-transform: skew(-40deg, 0deg);
           transform: skew(-40deg, 0deg);
-  transition: all 0.2s;
+  transition: all 0.2s; 
 }
 
 section#button-container .button.v18 .icon:before, section#button-container .button.v18 .icon:after {
@@ -104,17 +103,17 @@ section#button-container .button.v18 .icon:before, section#button-container .but
   display: block;
   background: #d60d1b;
   transition: all 0.3s;
-  transition-delay: 0.5s;
+  transition-delay: 0.5s; 
 }
 
 section#button-container .button.v18 .icon:before {
   left: 0;
-  top: 0;
+  top: 0; 
 }
 
 section#button-container .button.v18 .icon:after {
   right: 0;
-  bottom: 0;
+  bottom: 0;  
 }
 
 section#button-container .button.v18 .icon span:before, section#button-container .button.v18 .icon span:after {
@@ -125,17 +124,17 @@ section#button-container .button.v18 .icon span:before, section#button-container
   width: 2px;
   height: 30px;
   transition: all 0.2s;
-  transition-delay: 0.4s;
+  transition-delay: 0.4s;  
 }
 
 section#button-container .button.v18 .icon span:before {
   left: 0;
-  top: 0;
+  top: 0; 
 }
 
 section#button-container .button.v18 .icon span:after {
   right: 0;
-  bottom: 0;
+  bottom: 0; 
 }
 
 h1 {
@@ -144,42 +143,42 @@ font-style: normal;
 font-weight: 1.5em;
 font-family: tahoma;
 margin-top:0px;
-direction:ltr;
+direction:ltr; 
 }
 
 iframe{
-margin-top: -10px;
+margin-top: -10px; 
 }
 
 a:link {
-color:#01bfff;
+color:#01bfff; 
 }
 
 a:visited {
-color:white;
+color:white; 
 }
 
 .highlight {
   font-family:sans-serif;
   color:white;
   background-color:#202020;
- font-size:20px;
+ font-size:20px; 
 }
 
 .unhighlight{
   color:black;
-  background-color:black;
+  background-color:black;  
 }
 
 .highlight2 {
     background-color: black;
 }
 
-* {direction:rtl;}
+* {direction:rtl;} 
 
 </style>
 
-		<script>
+<script>
 		function highlight(text) {
   var inputText = document.getElementById("inputText");
   var innerHTML = inputText.innerHTML;
@@ -386,9 +385,7 @@ function unhighlight(text) {
 </center>
                     <center>
 					<br>
-                        <div id="inputText" style="float:right+1em">
-                        
-                    </div>
+                     <div id="inputText" style="float:right+1em"> </div>
                     </center>
 </body>
 </html>
