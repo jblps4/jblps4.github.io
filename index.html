@@ -146,6 +146,27 @@ margin-top:0px;
 direction:ltr; 
 }
 
+h2 {
+ color: white;
+ position: absolute;
+ top:4px;
+ right:0;
+ margin-right: 1em;
+ font-size: 20px;
+ /* z-index: 21; */
+}
+
+h3 {
+ margin-top: 48px; 
+ color: white;
+ position: absolute;
+ top:4px;
+ right:3em;
+ margin-right: 1em;
+ font-size: 20px;
+ /* z-index: 21; */
+}
+
 iframe{
 margin-top: -10px; 
 }
@@ -194,6 +215,27 @@ function unhighlight(text) {
 					<center>
 <br>
 
+<h2 class="clock" id="clock">...در حال بارگذاری Self-Host</h2>
+<h3 class="timec" id="timec"> TIME </h3>
+
+<script src="payloads/PersianCalendar.js"></script>
+<script>
+      document.getElementById('timec').innerHTML = new Date();
+  document.getElementById('timec').innerHTML = document.getElementById('timec').innerHTML.slice(15,21);
+ var i = setInterval(function() {
+  document.getElementById('timec').innerHTML = new Date();
+  document.getElementById('timec').innerHTML = document.getElementById('timec').innerHTML.slice(15,21);
+}, 60 * 1000);
+
+  var PC1 = new PersianCalendar(1,"persian calendar . V 1.0 ");
+  document.getElementById("clock").innerHTML =PC1.date;
+    document.getElementById("year").innerHTML=PC0.year;
+    document.getElementById("month").innerHTML=PC0.month;
+    document.getElementById("day").innerHTML=PC0.day;
+    document.getElementById("day-name").innerHTML=PC0.dayname;
+    document.getElementById("month-name").innerHTML=PC0.monthname
+</script>
+
 <section id="button-container">
     <div class="container"> <h1>« PlayStation 4 Self-Exploit Host v1.5.6 (Lite Version) »</h1>
 
@@ -218,7 +260,7 @@ function unhighlight(text) {
 		</div>
 
 		<div class="button v18">
-		    <a href="payloads/vtxhen17.html" onmouseover="highlight('« پی لود HEN (اختصار برای Homebrew ENabler) که امکان نصب و اجرای بازیهای بصورت fPKG را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">HEN 1.7</span>
+		    <a href="payloads/vtxhen17.html" target="expl-loader" onmouseover="highlight('« پی لود HEN (اختصار برای Homebrew ENabler) که امکان نصب و اجرای بازیهای بصورت fPKG را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">HEN 1.7</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -227,7 +269,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/vtxhenc0d3mod.html" onmouseover="highlight('« نسخه سبک تر پی لود HEN که قابلیت آپدیت بلاکر در آن حذف شده است »')" onmouseout="unhighlight()"><span class="label">HEN 1.7 Lite</span>
+		    <a href="payloads/vtxhenc0d3mod.html" target="expl-loader" onmouseover="highlight('« نسخه سبک تر پی لود HEN که قابلیت آپدیت بلاکر در آن حذف شده است »')" onmouseout="unhighlight()"><span class="label">HEN 1.7 Lite</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -236,7 +278,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/vtxhen18.html" onmouseover="highlight('« پی لود HEN (اختصار برای Homebrew ENabler) که امکان نصب و اجرای بازیهای بصورت fPKG را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">HEN 1.8</span>
+		    <a href="payloads/vtxhen18.html" target="expl-loader" onmouseover="highlight('« پی لود HEN (اختصار برای Homebrew ENabler) که امکان نصب و اجرای بازیهای بصورت fPKG را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">HEN 1.8</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -245,7 +287,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/vtxhen2.html" onmouseover="highlight('« نسخه آپدیت شده پی لود HEN که مشکل Rest Mode در آن برطرف شده است »')" onmouseout="unhighlight()"><span class="label">HEN 2.1</span>
+		    <a href="payloads/vtxhen2.html" target="expl-loader" onmouseover="highlight('« نسخه آپدیت شده پی لود HEN که مشکل Rest Mode در آن برطرف شده است »')" onmouseout="unhighlight()"><span class="label">HEN 2.1</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -254,7 +296,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/mirahen18.html" onmouseover="highlight('« فعالسازی MIRA+HEN 1.8 به همراه ابزار ثبت لاگ کرنل از طریق پورت 9999/9998 »')" onmouseout="unhighlight()"><span class="label">HEN 1.8 + Mira</span>
+		    <a href="payloads/mirahen18.html" target="expl-loader" onmouseover="highlight('« فعالسازی MIRA+HEN 1.8 به همراه ابزار ثبت لاگ کرنل از طریق پورت 9999/9998 »')" onmouseout="unhighlight()"><span class="label">HEN 1.8 + Mira</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -263,7 +305,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/hen18vrmod.html" onmouseover="highlight('« ترکیبی از پی لود HEN 1.8 و VR به همراه Spoof به فریمور 9.00 که فقط استفاده از VR را فراهم میکند»')" onmouseout="unhighlight()"><span class="label">HEN 1.8 + VR</span>
+		    <a href="payloads/hen18vrmod.html" target="expl-loader" onmouseover="highlight('« ترکیبی از پی لود HEN 1.8 و VR به همراه Spoof به فریمور 9.00 که فقط استفاده از VR را فراهم میکند»')" onmouseout="unhighlight()"><span class="label">HEN 1.8 + VR</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -272,7 +314,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/mira.html" onmouseover="highlight('« فعالسازی MIRA و ابزار ثبت لاگ کرنل از طریق پورت 9999/9998 »')" onmouseout="unhighlight()"><span class="label">Mira Orbis</span>
+		    <a href="payloads/mira.html" target="expl-loader" onmouseover="highlight('« فعالسازی MIRA و ابزار ثبت لاگ کرنل از طریق پورت 9999/9998 »')" onmouseout="unhighlight()"><span class="label">Mira Orbis</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -281,7 +323,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/vr.html" onmouseover="highlight('« فعال کردن هدست VR در صورت نیاز که باید بعد از پی لود HEN انتخاب شود »')" onmouseout="unhighlight()"><span class="label">VR Enabler</span>
+		    <a href="payloads/vr.html" target="expl-loader" onmouseover="highlight('« فعال کردن هدست VR در صورت نیاز که باید بعد از پی لود HEN انتخاب شود »')" onmouseout="unhighlight()"><span class="label">VR Enabler</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -290,7 +332,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/FanControl.html" onmouseover="highlight('« تنظیم دمای دلخواه جهت چرخش بیشتر دور فن که تا زمانی که برق کنسول قطع نشود فعال است. (پیشفرض 79) »')" onmouseout="unhighlight()"><span class="label">Fan Control</span>
+		    <a href="payloads/FanControl.html" target="expl-loader" onmouseover="highlight('« تنظیم دمای دلخواه جهت چرخش بیشتر دور فن که تا زمانی که برق کنسول قطع نشود فعال است. (پیشفرض 79) »')" onmouseout="unhighlight()"><span class="label">Fan Control</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -299,7 +341,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/apptousb.html" onmouseover="highlight('« انتقال بازی نصب شده از کنسول به حافظه خارجی با فرمت ExFat »')" onmouseout="unhighlight()"><span class="label">AppToUSB</span>
+		    <a href="payloads/apptousb.html" target="expl-loader" onmouseover="highlight('« انتقال بازی نصب شده از کنسول به حافظه خارجی با فرمت ExFat »')" onmouseout="unhighlight()"><span class="label">AppToUSB</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -308,7 +350,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/2gblinux.html" onmouseover="highlight('« لودر مخصوص لینوکس نسخه Psxitarch V2 با مقدار VRam 2 »')" onmouseout="unhighlight()"><span class="label">Linux Loader</span>
+		    <a href="payloads/2gblinux.html" target="expl-loader" onmouseover="highlight('« لودر مخصوص لینوکس نسخه Psxitarch V2 با مقدار VRam 2 »')" onmouseout="unhighlight()"><span class="label">Linux Loader</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -317,7 +359,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/binloader.html" onmouseover="highlight('« فعالسازی BINLOADER از طریق پورت 9020 »')" onmouseout="unhighlight()"><span class="label">BIN Loader</span>
+		    <a href="payloads/binloader.html" target="expl-loader" onmouseover="highlight('« فعالسازی BINLOADER از طریق پورت 9020 »')" onmouseout="unhighlight()"><span class="label">BIN Loader</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -326,7 +368,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/vtxdump.html" onmouseover="highlight('« پی لود Dumper که امکان تهیه دامپ یا بکاپ از دیسک بازی و یا عناوین دیجیتالی PS4 را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">Dumper</span>
+		    <a href="payloads/vtxdump.html" target="expl-loader" onmouseover="highlight('« پی لود Dumper که امکان تهیه دامپ یا بکاپ از دیسک بازی و یا عناوین دیجیتالی PS4 را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">Dumper</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -335,7 +377,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/vtxftp.html" onmouseover="highlight('« پی لود FTP که بستر ارتباطی لازم جهت اتصال کنسول و کامپیوتر را از طریق پروتکل FTP فراهم می سازد »')" onmouseout="unhighlight()"><span class="label">FTP</span>
+		    <a href="payloads/vtxftp.html" target="expl-loader" onmouseover="highlight('« پی لود FTP که بستر ارتباطی لازم جهت اتصال کنسول و کامپیوتر را از طریق پروتکل FTP فراهم می سازد »')" onmouseout="unhighlight()"><span class="label">FTP</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -344,7 +386,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/ftprw.html" onmouseover="highlight('« راه اندازی پروتکل FTP و همچنین دسترسی Read/Write به تمامی 16 پارتیشن موجود در هارد کنسول »')" onmouseout="unhighlight()"><span class="label">FTP RW</span>
+		    <a href="payloads/ftprw.html" target="expl-loader" onmouseover="highlight('« راه اندازی پروتکل FTP و همچنین دسترسی Read/Write به تمامی 16 پارتیشن موجود در هارد کنسول »')" onmouseout="unhighlight()"><span class="label">FTP RW</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -353,7 +395,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/blocker.html" onmouseover="highlight('« پی لود Disable Updates که مانع از آپدیت شدن کنسول در مواقعی که به اینترنت متصل است می گردد »')" onmouseout="unhighlight()"><span class="label">Update Blocker</span>
+		    <a href="payloads/blocker.html" target="expl-loader" onmouseover="highlight('« پی لود Update Blocker که مانع از آپدیت شدن کنسول در مواقعی که به اینترنت متصل است می گردد »')" onmouseout="unhighlight()"><span class="label">Update Blocker</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -362,7 +404,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/unblock.html" onmouseover="highlight('« پی لود Enable Updates که با غیر فعال کردن Disable Updates امکان دریافت و نصب آپدیت را میسر می سازد »')" onmouseout="unhighlight()"><span class="label">Update UnBlocker</span>
+		    <a href="payloads/unblock.html" target="expl-loader" onmouseover="highlight('« پی لود Update UnBlocker که با غیر فعال کردن Update Blocker امکان دریافت و نصب آپدیت را میسر می سازد »')" onmouseout="unhighlight()"><span class="label">Update UnBlocker</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -371,7 +413,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/pkgbackup.html" onmouseover="highlight('« کپی کردن فایلهای PKG به حافظه USB »')" onmouseout="unhighlight()"><span class="label">PKG Backup</span>
+		    <a href="payloads/pkgbackup.html" target="expl-loader" onmouseover="highlight('« کپی کردن فایلهای PKG به حافظه USB »')" onmouseout="unhighlight()"><span class="label">PKG Backup</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -380,7 +422,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/PS4REN.html" onmouseover="highlight('« فعالسازی قابلیت Remote Play از طریق شبیه سازی IDU »')" onmouseout="unhighlight()"><span class="label">Remote Play</span>
+		    <a href="payloads/PS4REN.html" target="expl-loader" onmouseover="highlight('« فعالسازی قابلیت Remote Play از طریق شبیه سازی IDU »')" onmouseout="unhighlight()"><span class="label">Remote Play</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -389,7 +431,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/RifRenamer.html" onmouseover="highlight('« با اجرای این پی لود بازی هایی که با MiraHen نصب شده باشند، با HEN نیز اجرا خواهند شد »')" onmouseout="unhighlight()"><span class="label">Rif Renamer</span>
+		    <a href="payloads/RifRenamer.html" target="expl-loader" onmouseover="highlight('« با اجرای این پی لود بازی هایی که با MiraHen نصب شده باشند، با HEN نیز اجرا خواهند شد »')" onmouseout="unhighlight()"><span class="label">Rif Renamer</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -398,7 +440,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/screenshot.html" onmouseover="highlight('« فعالسازی HEN 1.7 به همراه پی لود Screenshot که اجازه گرفتن اسکرین شات در بخشهای محدود شده را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">HEN + Screenshot</span>
+		    <a href="payloads/screenshot.html" target="expl-loader" onmouseover="highlight('« فعالسازی HEN 1.7 به همراه پی لود Screenshot که اجازه گرفتن اسکرین شات در بخشهای محدود شده را فراهم میکند »')" onmouseout="unhighlight()"><span class="label">HEN + Screenshot</span>
 			 <span class="icon">
                 <span></span>
             </span>
@@ -407,7 +449,7 @@ function unhighlight(text) {
 			</div>
 
 		<div class="button v18">
-		    <a href="payloads/xmbcache.html" onmouseover="highlight('« توسط این پی لود، ابزار Self-Host در مرورگر کنسول بطور کامل کش (ذخیره) شده و از دفعات بعد بصورت آفلاین اجرا خواهد شد »')" onmouseout="unhighlight()"><span class="label">Cache Install</span>
+		    <a href="payloads/xmbcache.html" target="expl-loader" onmouseover="highlight('« توسط این پی لود، ابزار Self-Host در مرورگر کنسول بطور کامل کش (ذخیره) شده و از دفعات بعد بصورت آفلاین اجرا خواهد شد »')" onmouseout="unhighlight()"><span class="label">Cache Install</span>
 			 <span class="icon">
                 <span></span>
             </span>
